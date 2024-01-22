@@ -17,11 +17,8 @@ button {
     text-transform: uppercase;
     width: auto;
     font-size: 30px;
-    padding-left: 10px;
-}
-
-button .input {
     width: 100%;
+    padding-left: 10px;
 }
 
 h1, h2, h3 {
@@ -51,19 +48,28 @@ h1 {
 
 .ID {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
-    box-sizing: content-box;
-    padding-left: 30px;
-    padding-right: 50px;
-    width: 150px;
+
 }
 
 .userID {
-    padding-left: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 calc(30%  - 10px);
+    align-items: center;
+    padding-left: 25px;
+    height: 40px;
 }
 
-.Server {
-    padding-left: 50px;
+.server {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 calc(30%  - 10px);
+    align-items: center;
+    text-align: center;
+    height: 40px;
+    padding-left: 25px;
 }
 
 .mainPage {
@@ -97,6 +103,7 @@ h1 {
 
 #price1 {
     background-color: #becccf;
+    border: transparent;
 }
 
 #price1:active {
@@ -104,7 +111,7 @@ h1 {
 }
 
 #price1:hover {
-    background-color: #00d4ff;
+    background-color: #02093B;
     color: #fff;
 }
 
@@ -128,16 +135,29 @@ iframe {
 }
 
 .input {
-    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex: 1 1 calc(33.33% - 10px);
+    height: 40px;
+    align-items: center;
+    text-align: center;
+    width: fit-content;
 }
 
 .aba, .khqr {
     padding: 10px;
     border-radius: 8px;
-    column-gap: 10px;
+    border: transparent;
+
+    background-color: antiquewhite;
 }
 
 #aba:hover, #qrkh:hover {
-    background-color: #00d4ff;
+    background-color: #02093B;
     color: #fff;
+}
+
+#aba:active, #qrkh:active {
+    background-color: #a2088b;
 }
