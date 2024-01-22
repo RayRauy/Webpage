@@ -13,6 +13,13 @@ body {
     }
 }
 
+@media screen and (min-width: 780px) {
+    body {
+    margin: auto;
+    width: 90%;
+    }
+}
+
 button {
     text-transform: uppercase;
     width: auto;
