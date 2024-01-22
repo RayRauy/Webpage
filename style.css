@@ -1,0 +1,143 @@
+body {
+    font-family: sans-serif;
+    background: linear-gradient(to right, #a2088b, #8521c1, #00d4ff);
+    overflow: hidden;
+    overflow: scroll;
+    position: relative;
+    line-height: inherit;
+}
+
+@media (max-width: 200px) {
+    body {
+        margin: 10px;
+    }
+}
+
+button {
+    text-transform: uppercase;
+    width: auto;
+    font-size: 30px;
+    padding-left: 10px;
+}
+
+button .input {
+    width: 100%;
+}
+
+h1, h2, h3 {
+    background-color: white;
+    border-radius: 9px;
+}
+
+section {
+    background-color: white;
+    margin-top: 5%;
+    border-radius: 9px;
+    padding: 0.1px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+.container {
+    padding-left: 70px;
+    padding-right: 30px;
+}
+
+.ID {
+    display: flex;
+    gap: 10px;
+    box-sizing: content-box;
+    padding-left: 30px;
+    padding-right: 50px;
+    width: 150px;
+}
+
+.userID {
+    padding-left: 50px;
+}
+
+.Server {
+    padding-left: 50px;
+}
+
+.mainPage {
+    margin-top: 0;
+}
+
+.topUp, .mainPage {
+    padding: 0.1px;
+    padding-left: 30px;
+}
+
+.prices {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 100%;
+}
+
+.price {
+    flex: 1 1 calc(30%  - 10px);
+    height: 70px;
+    box-sizing: border-box;
+    margin: 5px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#price1 {
+    background-color: #becccf;
+}
+
+#price1:active {
+    background-color: #fff;
+}
+
+#price1:hover {
+    background-color: #00d4ff;
+    color: #fff;
+}
+
+iframe {
+    display: block;
+    box-sizing: border-box;
+    overflow-clip-margin: conten-box;
+    height: 1px;
+    position: absolute;
+    visibility: hidden;
+}
+
+.aba {
+    width: 50%;
+    float: left;
+}
+
+.khqr {
+    width: 50%;
+    float: right;
+}
+
+.input {
+    margin-top: 15px;
+}
+
+.aba, .khqr {
+    padding: 10px;
+    border-radius: 8px;
+    column-gap: 10px;
+}
+
+#aba:hover, #qrkh:hover {
+    background-color: #00d4ff;
+    color: #fff;
+}
