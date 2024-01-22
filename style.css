@@ -7,7 +7,7 @@ body {
     line-height: inherit;
 }
 
-@media (max-width: 200px) {
+@media (max-width: 700px) {
     body {
         margin: 10px;
     }
