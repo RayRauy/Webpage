@@ -7,17 +7,28 @@ body {
     line-height: inherit;
 }
 
-@media (max-width: 700px) {
+/*This is for mobile screen*/
+@media  only screen and (max-width: 600px) {
     body {
         margin: 10px;
     }
 }
 
-@media screen and (min-width: 780px) {
+/*This is for tablet screen*/
+@media only screen and (min-width: 601px) and (max-width: 1024px){
     body {
     margin: auto;
     width: 90%;
     }
+}
+
+/*This is for laptop screen*/
+@media only screen and (min-width: 1024px) {
+    body {
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+    
 }
 
 button {
@@ -26,6 +37,8 @@ button {
     font-size: 30px;
     width: 100%;
     padding-left: 10px;
+    border-radius: 8px;
+    border-color: transparent;
 }
 
 h1, h2, h3 {
@@ -57,26 +70,30 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-
+    border-color: #000;
 }
 
 .userID {
-    display: flex;
-    flex-wrap: wrap;
-    flex: 1 1 calc(30%  - 10px);
-    align-items: center;
-    padding-left: 25px;
-    height: 40px;
-}
-
-.server {
+    border-radius: 8px;
     display: flex;
     flex-wrap: wrap;
     flex: 1 1 calc(30%  - 10px);
     align-items: center;
     text-align: center;
     height: 40px;
-    padding-left: 25px;
+    border: 2px solid #000;
+}
+
+.server {
+    border-radius: 8px;
+
+    border: 2px solid #000;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 calc(30%  - 10px);
+    align-items: center;
+    text-align: center;
+    height: 40px;
 }
 
 .mainPage {
@@ -150,13 +167,29 @@ iframe {
     align-items: center;
     text-align: center;
     width: fit-content;
+    margin-top: 10px;
+}
+
+.input:hover {
+    cursor: pointer;
+    background-color: #02093B;
+    color: #fff;
+}
+
+#Submit {
+    margin-top: 50px;
 }
 
 .aba, .khqr {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 10px;
+    text-align: center;
+    flex-wrap: wrap;
     padding: 10px;
     border-radius: 8px;
     border: transparent;
-
+    gap: 10px;
     background-color: antiquewhite;
 }
 
