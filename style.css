@@ -18,14 +18,14 @@ body {
 
 /*This is for tablet screen*/
 @media only screen and (min-width: 601px) and (max-width: 1024px){
-    body {
+    .prices {
         padding: 30px;
     }
 }
 
 /*This is for laptop screen*/
 @media only screen and (min-width: 1024px) {
-    body {
+    .prices {
         margin: 0 auto;
         max-width: 1200px;
     }
@@ -183,6 +183,7 @@ iframe {
 
 .aba, .khqr {
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
     padding-bottom: 10px;
     text-align: center;
