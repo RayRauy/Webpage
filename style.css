@@ -9,9 +9,10 @@ body {
 
 /*This is for mobile screen*/
 @media  only screen and (max-width: 600px) {
-    body {
+    .prices {
         margin: 10px;
         flex-direction: column;
+        flex: 100%;
     }
 }
 
