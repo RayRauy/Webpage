@@ -169,6 +169,7 @@ iframe {
     align-items: center;
     text-align: center;
     width: fit-content;
+    overflow-wrap: normal;
 }
 
 .input:hover {
